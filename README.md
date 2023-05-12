@@ -13,8 +13,8 @@ Khi upload source code lên, Github sẽ không nhận thư mục vender. Vậy 
 
 - Tạo file .env trong thư mục gốc của dự án
 - Sao chép nội dung trong file .env.example vào file .env vừa tạo
-- Chạy lệnh lần lượt các lệnh: php artisan key:generate
-                               php artisan cache:clear 
+- Chạy lệnh lần lượt các lệnh: php artisan key:generate, 
+                               php artisan cache:clear,  
                                php artisan config:clear
 
 ## About Laravel
