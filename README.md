@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Hướng dẫn sử dụng
+
+Khi upload source code lên, Github sẽ không nhận thư mục vender. Vậy nên khi download trên Gibhub về chúng ta cần chạy lệnh composer update trong terminal để download lại thư mục vender. Sau đó sẽ có lỗi server 500, và cách fix như sau::
+
+- Tạo file .env trong thư mục gốc của dự án
+- Sao chép nội dung trong file .env.example vào file .env vừa tạo
+- Chạy lệnh lần lượt các lệnh: php artisan key:generate
+                               php artisan cache:clear 
+                               php artisan config:clear
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
